@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-page="tours" data-title-key="page.tours.title" data-description-key="page.tours.description">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tours — TravelHorizon</title>
+<meta name="description" content="Four fixed-route tours in Kyrgyzstan: Ala-Kul, Song-Kul, Issyk-Kul and Jyrgalan. Durations, seasons and starting prices.">
+<meta name="theme-color" content="#1F3A2C">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="/styles.css?v=1.0.1">
+<script src="/boot.js?v=1.0.1"></script>
+<script src="/data.js?v=1.0.1" defer></script>
+<script src="/i18n.js?v=1.0.1" defer></script>
+<script src="/script.js?v=1.0.1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="/"><svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M7 20a9 9 0 0 1 18 0" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M2 20h28" stroke="currentColor" stroke-width="1.6"/><path d="M9 24.5h14" stroke="currentColor" stroke-width="1.6" opacity=".55"/></svg><span class="brand__name">TravelHorizon</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-i18n-attr="aria-label:nav.main" data-nav>
+        <ul class="site-nav__list">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li><a href="/tours.html" aria-current="page" data-i18n="nav.tours">Tours</a></li>
+          <li><a href="/experiences.html" data-i18n="nav.experiences">Experiences</a></li>
+          <li><a href="/about.html" data-i18n="nav.about">About us</a></li>
+          <li><a href="/partners.html" data-i18n="nav.partners">Partners</a></li>
+          <li><a href="/contacts.html" data-i18n="nav.contacts">Contacts</a></li>
+        </ul>
+        <a class="button button--small site-nav__cta" href="/contacts.html" data-i18n="nav.cta">Plan a trip</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+        <button type="button" data-set-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+        <button type="button" data-set-lang="ru" lang="ru" aria-label="Русский" aria-pressed="false">RU</button>
+        <button type="button" data-set-lang="ky" lang="ky" aria-label="Кыргызча" aria-pressed="false">KY</button>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="nav-toggle__icon" aria-hidden="true"></span>
+        <span class="nav-toggle__label" data-i18n="nav.menu">Menu</span>
+      </button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__grid">
+        <h1 class="display-1" id="page-title" data-i18n="tours.hero.title">Four routes through the high country</h1>
+        <p class="lead page-hero__lead" data-i18n="tours.hero.lead">Fixed routes, local guides, small groups and an honest starting price. Choose a route, then tell us your dates.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight-top" aria-labelledby="page-title">
+      <div class="container">
+        <div class="filter-bar">
+          <div class="filter-bar__group" role="group" aria-labelledby="filter-label">
+            <span class="filter-bar__label" id="filter-label" data-i18n="tours.filter.label">Show</span>
+            <button type="button" class="chip" data-filter="all" aria-pressed="true" data-i18n="tours.filter.all">All tours</button>
+            <button type="button" class="chip" data-filter="trekking" aria-pressed="false" data-i18n="tours.filter.trekking">Trekking</button>
+            <button type="button" class="chip" data-filter="horse" aria-pressed="false" data-i18n="tours.filter.horse">Horse riding</button>
+            <button type="button" class="chip" data-filter="lakes" aria-pressed="false" data-i18n="tours.filter.lakes">Lakes</button>
+            <button type="button" class="chip" data-filter="yurt" aria-pressed="false" data-i18n="tours.filter.yurt">Yurt stays</button>
+            <button type="button" class="chip" data-filter="culture" aria-pressed="false" data-i18n="tours.filter.culture">Culture &amp; crafts</button>
+          </div>
+          <p class="filter-bar__count" data-tour-count aria-live="polite">4 tours</p>
+        </div>
+
+        <div class="tour-list" data-tour-list>
+        <article class="tour" id="tour-ala" data-tour="ala" data-categories="trekking lakes" aria-labelledby="tour-ala-name">
+          <figure class="tour__media" data-reveal>
+            <img src="/img/tour-ala?w=1280" srcset="/img/tour-ala?w=500 500w, /img/tour-ala?w=960 960w, /img/tour-ala?w=1280 1280w, /img/tour-ala?w=1920 1920w" sizes="(min-width: 900px) 48vw, 100vw" width="1280" height="960" alt="Ala-Kul seen from the pass above it" data-i18n-attr="alt:photo.ala" loading="lazy" decoding="async">
+            <figcaption class="caption" data-i18n="photo.ala">Ala-Kul seen from the pass above it</figcaption>
+          </figure>
+          <div class="tour__body">
+            <h2 class="tour__name" id="tour-ala-name" data-i18n="tour.ala.name">Ala-Kul &amp; the high trails</h2>
+            <p class="tour__summary" data-i18n="tour.ala.summary">Eight days on foot from Karakol, through spruce valleys to the turquoise Ala-Kul lake and down to the hot springs of Altyn-Arashan.</p>
+            <dl class="facts">
+              <div class="facts__item"><dt data-i18n="tours.label.start">Starts in</dt><dd data-i18n="place.karakol">Karakol</dd></div>
+              <div class="facts__item"><dt data-i18n="tours.label.duration">Duration</dt><dd data-tour-days="ala">8 days</dd></div>
+              <div class="facts__item"><dt data-i18n="tours.label.season">Season</dt><dd data-tour-season="ala">Jun – Sep</dd></div>
+              <div class="facts__item"><dt data-i18n="tours.label.activity">Activity</dt><dd data-i18n="tour.ala.activity">Trekking</dd></div>
+            </dl>
+            <div class="tour__footer">
+              <p class="price" data-i18n-template="tours.price" data-price-tour="ala"><span class="price__text">from </span><span class="price__value" data-slot="price">$980</span><span class="price__text"> per person</span></p>
+              <a class="button" href="/contacts.html?tour=ala" data-i18n="tours.enquire">Enquire about this tour</a>
+            </div>
+          </div>
+        </article>
+        <article class="tour tour--flip" id="tour-song" data-tour="song" data-categories="horse yurt lakes" aria-labelledby="tour-song-name">
+          <figure class="tour__media" data-reveal>
+            <img src="/img/tour-song?w=1280" srcset="/img/tour-song?w=500 500w, /img/tour-song?w=960 960w, /img/tour-song?w=1280 1280w, /img/tour-song?w=1920 1920w" sizes="(min-width: 900px) 48vw, 100vw" width="1280" height="960" alt="Evening in a yurt camp at Song-Kul" data-i18n-attr="alt:photo.song" loading="lazy" decoding="async">
+            <figcaption class="caption" data-i18n="photo.song">Evening in a yurt camp at Song-Kul</figcaption>
+          </figure>
+          <div class="tour__body">
+            <h2 class="tour__name" id="tour-song-name" data-i18n="tour.song.name">Song-Kul, slowly</h2>
+            <p class="tour__summary" data-i18n="tour.song.summary">Six days in Naryn region: summer pastures, a ride up to Song-Kul at 3,016 metres and nights in a herders’ yurt camp.</p>
+            <dl class="facts">
+              <div class="facts__item"><dt data-i18n="tours.label.start">Starts in</dt><dd data-i18n="place.naryn">Naryn</dd></div>
+              <div class="facts__item"><dt data-i18n="tours.label.duration">Duration</dt><dd data-tour-days="song">6 days</dd></div>
+              <div class="facts__item"><dt data-i18n="tours.label.season">Season</dt><dd data-tour-season="song">Jun – Oct</dd></div>
+              <div class="facts__item"><dt data-i18n="tours.label.activity">Activity</dt><dd data-i18n="tour.song.activity">Horse riding &amp; yurt stays</dd></div>
+            </dl>
+            <div class="tour__footer">
+              <p class="price" data-i18n-template="tours.price" data-price-tour="song"><span class="price__text">from </span><span class="price__value" data-slot="price">$740</span><span class="price__text"> per person</span></p>
+              <a class="button" href="/contacts.html?tour=song" data-i18n="tours.enquire">Enquire about this tour</a>
+            </div>
+          </div>
+        </article>
+        <article class="tour" id="tour-issyk" data-tour="issyk" data-categories="lakes culture" aria-labelledby="tour-issyk-name">
+          <figure class="tour__media" data-reveal>
+            <img src="/img/tour-issyk?w=1280" srcset="/img/tour-issyk?w=500 500w, /img/tour-issyk?w=960 960w, /img/tour-issyk?w=1280 1280w, /img/tour-issyk?w=1920 1920w" sizes="(min-width: 900px) 48vw, 100vw" width="1280" height="960" alt="The south shore of Issyk-Kul" data-i18n-attr="alt:photo.issyk" loading="lazy" decoding="async">
+            <figcaption class="caption" data-i18n="photo.issyk">The south shore of Issyk-Kul</figcaption>
+          </figure>
+          <div class="tour__body">
+            <h2 class="tour__name" id="tour-issyk-name" data-i18n="tour.issyk.name">The long way around</h2>
+            <p class="tour__summary" data-i18n="tour.issyk.summary">Seven days around Issyk-Kul: the quiet south shore, canyon walks, felt workshops and long evenings by the water.</p>
+            <dl class="facts">
+              <div class="facts__item"><dt data-i18n="tours.label.start">Starts in</dt><dd data-i18n="place.issyk">Issyk-Kul</dd></div>
+              <div class="facts__item"><dt data-i18n="tours.label.duration">Duration</dt><dd data-tour-days="issyk">7 days</dd></div>
+              <div class="facts__item"><dt data-i18n="tours.label.season">Season</dt><dd data-tour-season="issyk">May – Oct</dd></div>
+              <div class="facts__item"><dt data-i18n="tours.label.activity">Activity</dt><dd data-i18n="tour.issyk.activity">Road journey &amp; culture</dd></div>
+            </dl>
+            <div class="tour__footer">
+              <p class="price" data-i18n-template="tours.price" data-price-tour="issyk"><span class="price__text">from </span><span class="price__value" data-slot="price">$860</span><span class="price__text"> per person</span></p>
+              <a class="button" href="/contacts.html?tour=issyk" data-i18n="tours.enquire">Enquire about this tour</a>
+            </div>
+          </div>
+        </article>
+        <article class="tour tour--flip" id="tour-jyrgalan" data-tour="jyrgalan" data-categories="trekking horse" aria-labelledby="tour-jyrgalan-name">
+          <figure class="tour__media" data-reveal>
+            <img src="/img/tour-jyrgalan?w=1280" srcset="/img/tour-jyrgalan?w=500 500w, /img/tour-jyrgalan?w=960 960w, /img/tour-jyrgalan?w=1280 1280w, /img/tour-jyrgalan?w=1920 1920w" sizes="(min-width: 900px) 48vw, 100vw" width="1280" height="960" alt="Horses on the trail in the Karakol mountains" data-i18n-attr="alt:photo.jyrgalan" loading="lazy" decoding="async">
+            <figcaption class="caption" data-i18n="photo.jyrgalan">Horses on the trail in the Karakol mountains</figcaption>
+          </figure>
+          <div class="tour__body">
+            <h2 class="tour__name" id="tour-jyrgalan-name" data-i18n="tour.jyrgalan.name">Jyrgalan, off the map</h2>
+            <p class="tour__summary" data-i18n="tour.jyrgalan.summary">Five days in a former mining village that became a trail hub: ridge walks, days on horseback and wide views of the Tian Shan.</p>
+            <dl class="facts">
+              <div class="facts__item"><dt data-i18n="tours.label.start">Starts in</dt><dd data-i18n="place.jyrgalan">Jyrgalan</dd></div>
+              <div class="facts__item"><dt data-i18n="tours.label.duration">Duration</dt><dd data-tour-days="jyrgalan">5 days</dd></div>
+              <div class="facts__item"><dt data-i18n="tours.label.season">Season</dt><dd data-tour-season="jyrgalan">Jun – Oct</dd></div>
+              <div class="facts__item"><dt data-i18n="tours.label.activity">Activity</dt><dd data-i18n="tour.jyrgalan.activity">Hiking &amp; horse riding</dd></div>
+            </dl>
+            <div class="tour__footer">
+              <p class="price" data-i18n-template="tours.price" data-price-tour="jyrgalan"><span class="price__text">from </span><span class="price__value" data-slot="price">$620</span><span class="price__text"> per person</span></p>
+              <a class="button" href="/contacts.html?tour=jyrgalan" data-i18n="tours.enquire">Enquire about this tour</a>
+            </div>
+          </div>
+        </article>
+        </div>
+
+        <div class="empty-state" data-tour-empty hidden>
+          <h2 class="display-3" data-i18n="tours.empty.title">No tours in this category yet.</h2>
+          <p data-i18n="tours.empty.text">Pick another category, or ask us to plan a custom route.</p>
+          <div class="empty-state__actions">
+            <button type="button" class="button" data-filter-reset data-i18n="tours.empty.reset">Show all tours</button>
+            <a class="text-link" href="/contacts.html?interest=experience" data-i18n="tours.custom.cta">Ask for a custom trip</a>
+          </div>
+        </div>
+
+        <p class="fine-print" data-i18n="tours.note">Prices are per person and are starting estimates in USD. The team confirms availability and the final price.</p>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="custom-title">
+      <div class="container band__inner">
+        <h2 class="band__title" id="custom-title" data-i18n="tours.custom.title">Not quite the right fit?</h2>
+        <div class="band__side">
+          <p data-i18n="tours.custom.text">We can adjust a route, change the pace or plan a trip around your own dates.</p>
+          <a class="button button--light" href="/contacts.html?interest=experience" data-i18n="tours.custom.cta">Ask for a custom trip</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand" href="/"><svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M7 20a9 9 0 0 1 18 0" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M2 20h28" stroke="currentColor" stroke-width="1.6"/><path d="M9 24.5h14" stroke="currentColor" stroke-width="1.6" opacity=".55"/></svg><span class="brand__name">TravelHorizon</span></a>
+        <p class="site-footer__tagline" data-i18n="footer.tagline">Small-group journeys in Kyrgyzstan, led by people who live here.</p>
+        <p class="site-footer__meta" data-i18n="footer.based">Based in Bishkek, Kyrgyzstan</p>
+      </div>
+      <nav class="site-footer__col" aria-labelledby="footer-explore">
+        <h2 class="site-footer__heading" id="footer-explore" data-i18n="footer.explore">Explore</h2>
+        <ul>
+          <li><a href="/tours.html" data-i18n="nav.tours">Tours</a></li>
+          <li><a href="/experiences.html" data-i18n="nav.experiences">Experiences</a></li>
+          <li><a href="/contacts.html" data-i18n="nav.contacts">Contacts</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__col" aria-labelledby="footer-company">
+        <h2 class="site-footer__heading" id="footer-company" data-i18n="footer.company">Company</h2>
+        <ul>
+          <li><a href="/about.html" data-i18n="nav.about">About us</a></li>
+          <li><a href="/partners.html" data-i18n="nav.partners">Partners</a></li>
+          <li><a href="/about.html#credits" data-i18n="footer.photos">Photo credits</a></li>
+          <li><a href="/admin.html" rel="nofollow" data-i18n="footer.editor">Site editor</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="site-footer__bottom">
+        <p class="site-footer__note" data-i18n="footer.prices">Prices on this website are starting estimates in USD. Final arrangements and prices are confirmed by the TravelHorizon team.</p>
+        <p class="site-footer__copy" data-i18n="footer.copy">© 2026 TravelHorizon</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
